@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="temperature.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <title>Temperature converstion
+    </title>
+</head>
+<body>
+    <div>
+        <h1 class="heading">
+            <img src="./icon.png">Temperature converter
+        </h1>
+    </div>
+    <div class="main">
+        <div class="info">
+            <p ><b>Enter the temperature to convert</b></p>
+        </div>
+            <div class="input">
+                <div class="degree">
+                    <p><b>Degree</b></p>
+                    <input type="number" id="degree-input">
+                </div>
+                <div class="degree">
+                    <label>
+                    <p><b>Select type</b></p>
+                    </label>
+                    <select id="choice#" class="choice1">
+                        <option value="celcius" selected class="choice"><b>celcius</b></option>
+                        <option value="Fahrenheit" class="choice"><b>Fahrenheit</b></option>
+                    </select>
+                </div>
+            </div>
+            <div >
+                <button type="button" class="convert" onclick="conversion()"><b>convert</b></button>
+            </div>
+            <div class="result">
+                <div id="count" ></div>
+            </div>
+            
+            
+    </div>
+    <ion-icon name="thermometer-outline"></ion-icon>
+    <script src="temp.js"></script>
+</body>
+</html>
